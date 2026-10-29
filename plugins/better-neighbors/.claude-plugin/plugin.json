@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "better-neighbors",
+  "displayName": "Better Neighbors",
+  "version": "1.0.0",
+  "description": "Better Neighbors' four MCP servers in one install: core (podcasts, people, episodes, scanners, deep topics, clips and reports), Youniverse (the YouTube channel universe), Clipix (the clip review queue) and Moonshot (American Moonshot's atlas). Each server signs you in with your Google account, and your access decides what you may use.",
+  "author": {
+    "name": "BetterNeighborsAI"
+  },
+  "homepage": "https://platform-352866389133.us-central1.run.app/join-mcp"
+}

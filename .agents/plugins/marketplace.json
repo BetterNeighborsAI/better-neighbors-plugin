@@ -1,0 +1,20 @@
+{
+  "name": "better-neighbors-mcp",
+  "interface": {
+    "displayName": "BetterNeighborsAI"
+  },
+  "plugins": [
+    {
+      "name": "better-neighbors",
+      "source": {
+        "source": "local",
+        "path": "./chatgpt/better-neighbors"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

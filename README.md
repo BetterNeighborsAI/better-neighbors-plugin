@@ -1,6 +1,6 @@
 # Better Neighbors MCP servers
 
-Better Neighbors' four MCP servers, packaged for ChatGPT and Claude Code:
+Better Neighbors' four MCP servers:
 
 - **core**: podcasts, people, episodes, scanners, deep topics, clips and reports.
 - **Youniverse**: the YouTube channel universe.
@@ -8,22 +8,28 @@ Better Neighbors' four MCP servers, packaged for ChatGPT and Claude Code:
 - **Moonshot**: American Moonshot's atlas.
 
 Each server signs you in with your Google account, and Better Neighbors' access registry decides what you may use.
-Installing the plugin grants no access: your Better Neighbors contact arranges it. Each server's address is in
-[`plugins/better-neighbors/.mcp.json`](plugins/better-neighbors/.mcp.json).
+Installing grants no access: your Better Neighbors contact arranges it.
 
-## ChatGPT
+The **Better Neighbors** plugin sets the servers up the same way in ChatGPT and in Claude Code: install it, ask it to
+*set up the Better Neighbors servers*, approve the commands it shows, sign in with Google for each server, then open
+a new chat. The plugin carries no servers itself, because ChatGPT shows only the first 64 KB of a plugin's tools;
+each server's address is in
+[`plugins/better-neighbors/skills/better-neighbors-setup/SKILL.md`](plugins/better-neighbors/skills/better-neighbors-setup/SKILL.md).
 
-In the ChatGPT desktop app, open **Plugins**, then **Add**, then **Add a marketplace**:
+## ChatGPT (the desktop app)
 
-| Field | Value |
-|---|---|
-| Source | `https://github.com/BetterNeighborsAI/better-neighbors-plugin` |
-| Git ref | `main` |
-| Sparse paths | Leave empty |
+1. Open **Plugins**, then **Add**, then **Add a marketplace**:
 
-Then **Add marketplace**, and **Install** beside Better Neighbors. ChatGPT opens Google's sign-in for each server: sign
-in with your Google account each time. Use the plugin in a **Work** chat, and name the tool you want, for example *call
-the ping tool of the Better Neighbors core MCP server*.
+   | Field | Value |
+   |---|---|
+   | Source | `https://github.com/BetterNeighborsAI/better-neighbors-plugin` |
+   | Git ref | `main` |
+   | Sparse paths | Leave empty |
+
+2. **Add marketplace**, then **Install** beside Better Neighbors.
+3. In a **Work** chat, ask *set up the Better Neighbors servers*. Approve each command, and sign in with your Google
+   account in the browser for each server.
+4. Open a new **Work** chat and ask for the ping tool of the core server.
 
 ## Claude Code
 
@@ -32,12 +38,13 @@ the ping tool of the Better Neighbors core MCP server*.
 /plugin install better-neighbors@better-neighbors-mcp
 ```
 
-Then run `/mcp`, select a server and sign in with Google in the browser that opens. Repeat for each server you use.
+Then ask Claude to *set up the Better Neighbors servers*, approve each command, run `/mcp` to sign in to each
+server, and ask for the ping tool of the core server.
 
 ## Claude's apps: the desktop app and claude.ai
 
-Add each server you need as a custom connector: **Settings**, **Connectors**, **+ Add**, **Add custom connector**,
-with the server's name and its address, then **Connect** and sign in with Google.
+They cannot run commands, so add each server as a custom connector: **Settings**, **Connectors**, **+ Add**, **Add
+custom connector**, with the server's name and its address, then **Connect** and sign in with Google.
 
 ## Check
 

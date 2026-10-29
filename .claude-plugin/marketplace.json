@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin-marketplace.json",
   "name": "better-neighbors-mcp",
-  "description": "Better Neighbors' MCP servers for Claude Code",
+  "description": "Better Neighbors for Claude Code: sets up our MCP servers",
   "owner": {
     "name": "BetterNeighborsAI"
   },
@@ -10,8 +10,8 @@
       "name": "better-neighbors",
       "displayName": "Better Neighbors",
       "source": "./plugins/better-neighbors",
-      "description": "Better Neighbors' four MCP servers in one install: core (podcasts, people, episodes, scanners, deep topics, clips and reports), Youniverse (the YouTube channel universe), Clipix (the clip review queue) and Moonshot (American Moonshot's atlas). Each server signs you in with your Google account, and your access decides what you may use.",
-      "version": "1.0.0",
+      "description": "Sets up Better Neighbors' four MCP servers (core, Youniverse, Clipix and Moonshot) in the app it runs in, Claude Code or ChatGPT, the same way in both: each server added with the app's own command, a Google sign-in for each, then a new chat. The plugin carries no servers itself.",
+      "version": "2.0.0",
       "author": {
         "name": "BetterNeighborsAI"
       },

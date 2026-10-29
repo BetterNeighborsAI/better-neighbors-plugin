@@ -1,0 +1,25 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "better-neighbors",
+  "version": "2.0.0",
+  "description": "Sets up Better Neighbors' four MCP servers (core, Youniverse, Clipix and Moonshot) in the app it runs in, Claude Code or ChatGPT, the same way in both: each server added with the app's own command, a Google sign-in for each, then a new chat. The plugin carries no servers itself.",
+  "author": {
+    "name": "BetterNeighborsAI"
+  },
+  "homepage": "https://platform-352866389133.us-central1.run.app/join-mcp",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Better Neighbors",
+        "shortDescription": "Sets up the podcast, YouTube, clip and atlas servers",
+        "longDescription": "Sets up Better Neighbors' four MCP servers in the app you use: core (podcasts, people, episodes, scanners, deep topics, clips and reports), Youniverse (the YouTube channel universe), Clipix (the clip review queue) and Moonshot (American Moonshot's atlas). Ask it to set up the Better Neighbors servers: it adds each one with your approval, you sign in with your Google account, and your access decides what you may use.",
+        "developerName": "Better Neighbors",
+        "category": "Productivity",
+        "capabilities": [],
+        "websiteURL": "https://platform-352866389133.us-central1.run.app/join-mcp",
+        "logo": "./assets/icon.png",
+        "composerIcon": "./assets/icon.png"
+      }
+    }
+  }
+}

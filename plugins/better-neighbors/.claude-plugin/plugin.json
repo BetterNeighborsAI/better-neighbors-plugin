@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "better-neighbors",
   "displayName": "Better Neighbors",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Sets up Better Neighbors' four MCP servers (core, Youniverse, Clipix and Moonshot) in the app it runs in, Claude Code or ChatGPT, the same way in both: each server added with the app's own command, a Google sign-in for each, then a new chat. The plugin carries no servers itself.",
   "author": {
     "name": "BetterNeighborsAI"

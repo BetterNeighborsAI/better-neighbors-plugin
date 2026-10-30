@@ -5,9 +5,10 @@ description: Sets up Better Neighbors' four MCP servers (core, Youniverse, Clipi
 
 # Set up the Better Neighbors servers
 
-The servers are added to the app directly, one command per server, the same way in Claude Code and in ChatGPT. This
-plugin carries no servers of its own: ChatGPT shows only the first 64 KB of a plugin's tools, which our servers far
-exceed, and one plugin serves both apps.
+The servers are added to the app directly, one command per server, the same way in Claude Code and in ChatGPT. No
+plugin of ours carries them: ChatGPT shows only the first 64 KB of a plugin's tools, which our servers far exceed, and
+a plugin installed for one folder leaves every other folder without them. A server added this way is the person's, in
+every folder.
 
 ## The servers
 
@@ -28,8 +29,10 @@ The commands differ by app; the steps do not. In ChatGPT, run `codex` as
 `/Applications/ChatGPT.app/Contents/Resources/codex-cli/bin/codex` when it is not on the PATH.
 
 1. **See what is already there**: `claude mcp list` in Claude Code, `codex mcp list` in ChatGPT. A server already
-   listed with its address is done; skip it. In Claude Code, servers that come from the core-systems plugin show as
-   `plugin:core-systems:NAME`: the person already has them, so say so and add nothing.
+   listed under its own name with its address is done; skip it. In Claude Code, a server listed as
+   `plugin:core-systems:NAME` comes from the core-systems plugin 0.5 or older, which carried the servers until 0.6:
+   add the server anyway, and tell the person to update that plugin (`claude plugin update
+   core-systems@better-neighbors-ai`), after which only the one added here remains.
 2. **Add each missing server**, showing the command and running it once the person approves:
    - Claude Code: `claude mcp add --transport http --scope user NAME ADDRESS`
    - ChatGPT: `codex mcp add NAME --url ADDRESS`
